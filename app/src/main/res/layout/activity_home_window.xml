@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".HomeWindow">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/nosifer"
+            android:gravity="center|center_horizontal"
+            android:text="@string/sacramento_app"
+            android:textColor="#8AD9E3"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.188" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/nosifer"
+            android:gravity="center|center_horizontal"
+            android:text="@string/welcome_to"
+            android:textColor="#8AD9E3"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.099" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center_horizontal"
+            android:text="@string/crate_an_account_or_login"
+            android:textColor="#FFEB3B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.611" />
+
+        <Button
+            android:id="@+id/homeSignUp"
+            android:layout_width="350dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#03A9F4"
+            android:text="@string/sign_up"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/homeLogIn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#03A9F4"
+            android:text="@string/login"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeSignUp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
